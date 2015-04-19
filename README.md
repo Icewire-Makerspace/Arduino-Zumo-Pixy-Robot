@@ -6,7 +6,7 @@ A small tank-like robot that follows an object of a chosen colour.
 
 #### Usage
 
-After turning on the Zumo shield, teach [Pixy the object](http://www.cmucam.org/projects/cmucam5/wiki/Teach_Pixy_an_Object_2) to follow using colour signature 1 (red). Hold the object the desired distance away from the robot and press the Zumo user button. The robot will attempt to keep itself at the same position from the object that it was when you pressed the button.
+After turning on the Zumo shield, [teach Pixy the object](http://www.cmucam.org/projects/cmucam5/wiki/Teach_Pixy_an_Object_2) to follow using colour signature 1 (red). Hold the object the desired distance away from the robot and press the Zumo user button. The robot will attempt to keep itself at the same position from the object that it was when you pressed the button.
 
 ## Hardware
 
