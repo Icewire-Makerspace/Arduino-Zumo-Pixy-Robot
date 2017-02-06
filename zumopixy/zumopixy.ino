@@ -62,8 +62,6 @@ void followBlock(int trackedBlock) {
 	motors.setRightSpeed(right_speed);
 
 #ifdef DEBUG
-	/* Serial.print("size_diff: "); */
-	/* Serial.print(size_diff); */
 	Serial.print("x: ");
 	Serial.print(x);
 	Serial.print("    x_diff: ");
@@ -72,10 +70,6 @@ void followBlock(int trackedBlock) {
 	Serial.print(left_speed);
 	Serial.print("    right_speed: ");
 	Serial.print(right_speed);
-	/* Serial.print("left speed: "); */
-	/* Serial.print(left_speed); */
-	/* Serial.print("    right speed: "); */
-	/* Serial.print(right_speed); */
 	Serial.println();
 #endif
 }
@@ -101,7 +95,7 @@ void setup() {
 	buzzer.play(">g32>>c32");
 	while (pixy.getBlocks() == 0);
 	start_size = pixy.blocks[0].width * pixy.blocks[0].height;
-	size = start_width * start_height;
+	size = start_size;
 
 #ifdef DEBUG
 	Serial.print("size: ");
@@ -110,7 +104,6 @@ void setup() {
 #endif
 
 	delay(1000);
-	time = millis();
 }
 
 void loop() {
